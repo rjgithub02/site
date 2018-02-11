@@ -3,6 +3,7 @@
 <head>
   <title>Contact Ryan</title>
   <link rel="icon" href="logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
@@ -17,3 +18,26 @@
     <li><a href="contact.html">Contact</a></li>
     <li><a href="about.html">About</a></li>
   </ul>
+
+  <div class="container">
+  <form action="mailto:ryanclisham@gmail.com" method="get">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name" required>
+
+    <label for="lname">E-Mail</label>
+    <input type="text" id="email" name="email" placeholder="Your email address">
+
+    <label for="type">What Are You Contacting Me About</label>
+    <select id="types" name="Select One">
+      <option value="video">Video Request</option>
+      <option value="question">Questions</option>
+      <option value="business">Business Inquiry</option>
+      <option value="hi">Just To Say Hi</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <input type="text" name="subject" placeholder="Write something.."></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
